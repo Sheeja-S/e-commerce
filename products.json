@@ -1,0 +1,27 @@
+{
+  "products":[{
+    "name": "carrots",
+    "price": "30",
+    "content": "Australian carrots",
+    "stock": "In stock",
+    "image":"https://www.organicfacts.net/wp-content/uploads/2013/05/Carrot1.jpg"
+},{
+   "name": "apples",
+   "price": "20",
+   "content": "Fuji apples",
+   "stock": "In stock",
+   "image": "http://www.fitnessblackbook.com/wp-photos/Fuji%20Apples.jpg"
+ },{
+   "name": "kale",
+   "price": "45",
+   "content":"Greek Kale",
+   "stock": "Out of stock",
+   "image": "http://www.puraforceremedies.com/wp-content/uploads/2016/05/kale.jpg"
+ },{
+    "name": "lemon",
+    "price": "25",
+    "content": "Persian lemons",
+    "stock": "In stock",
+    "image": "http://media.beliefnet.com/~/media/photos/health/physical-health/galleries/lemons/shutterstock_2268934.jpg?as=1&w=600"
+ }]
+    }

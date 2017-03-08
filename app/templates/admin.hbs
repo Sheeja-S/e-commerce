@@ -1,0 +1,15 @@
+<br>
+<br>
+
+Update product information here.
+
+<ul>
+  {{#each model as |product|}}
+  <li>name:{{product.name}}
+  <br>
+     price:{{product.price}}$</li>
+
+     {{product-edit product=product edit="edit"}}
+
+  {{/each}}
+</ul>

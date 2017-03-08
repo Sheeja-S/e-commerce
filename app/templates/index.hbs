@@ -1,0 +1,16 @@
+<br>
+Find all organic products here !
+
+<button id="adminbutton" type="button"
+name="button">{{#link-to 'admin'}}For admin use{{/link-to}}
+</button>
+
+<ul>
+  {{#each model as |product|}}
+  <li>name:{{product.name}}
+  <br>
+     price:{{product.price}}$</li>
+     <br>
+     <img id = "imgstyling" src={{product.image}}>
+  {{/each}}
+</ul>

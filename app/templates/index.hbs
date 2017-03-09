@@ -8,9 +8,16 @@ name="button">{{#link-to 'admin'}}For admin use{{/link-to}}
 <ul>
   {{#each model as |product|}}
   <li>name:{{product.name}}
-  <br>
-     price:{{product.price}}$</li>
+     <br>
+  price:{{product.price}}$</li>
      <br>
      <img id = "imgstyling" src={{product.image}}>
+
+     <button {{action 'addToCart' product}}>Add to Cart</button>
   {{/each}}
+
+</ul>
+
+<ul>
+  {{display-cart product=product}}
 </ul>

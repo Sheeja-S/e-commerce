@@ -11,5 +11,12 @@ Update product information here.
 
      {{product-edit product=product edit="edit"}}
 
+     <button {{action 'destroyProduct' product}}>Delete product</button>
+
   {{/each}}
+  <br>
+  <br>
 </ul>
+     {{new-product product=product saveProduct = "saveProduct"}}
+
+     

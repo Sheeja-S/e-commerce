@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model(params) {
+  model() {
   return this.store.findAll('product');
 },
 actions: {
@@ -13,6 +13,13 @@ actions: {
       product.save();
     });
     this.transitionTo('index');
+  },
+  saveProduct(params){
+    var newProduct=this.store.createRecord('product', params);
+    newProduct.save();
+  },
+  destroyProduct(product) {
+    return product.destroyRecord('product');
   }
-}
+ }
 });
